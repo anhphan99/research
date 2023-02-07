@@ -69,6 +69,30 @@ class _HomeBodyState extends State<HomeBody> {
                       ),
                     ],
                   ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: healthCard(
+                          title: 'Steps',
+                          data: '${state.steps}',
+                          image: 'assets/images/ic_body.png',
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 15,
+                      ),
+                      Expanded(
+                        child: healthCard(
+                          title: 'Active energy',
+                          data: '${state.activeEnergy}',
+                          image: 'assets/images/ic_checkup.png',
+                        ),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             );

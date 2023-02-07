@@ -61,6 +61,8 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
         status: FetchHealthDataStatus.success,
         heartRate: heartRate,
         bp: bp,
+        steps: steps,
+        activeEnergy: activeEnergy,
       ));
     } else {
       debugPrint("Authorization not granted");
